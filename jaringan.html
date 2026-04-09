@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINETPRO - Jaringan Internet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            transform: translateY(-2px);
+            color: #3b82f6;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center">
+                        <i data-feather="globe" class="text-blue-500 mr-2"></i>
+                        <span class="font-bold text-xl text-blue-600">SINETPRO</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="home.html" class="nav-link text-gray-600 hover:text-blue-600 font-medium">Home</a>
+                    <a href="jaringan.html" class="nav-link text-blue-600 font-medium">Jaringan</a>
+                    <a href="aplikasi.html" class="nav-link text-gray-600 hover:text-blue-600 font-medium">Aplikasi</a>
+                    <a href="galeri.html" class="nav-link text-gray-600 hover:text-blue-600 font-medium">Galeri</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Jaringan Internet</h1>
+            <p class="text-xl md:text-2xl mb-8">Informasi tentang komponen jaringan internet dalam LAN</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <!-- Fiber Optik Section -->
+        <section class="mb-16">
+            <div class="flex flex-col md:flex-row items-center mb-12">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold text-blue-600 mb-4">Kabel Fiber Optik</h2>
+                    <p class="text-gray-600 mb-4">
+                        Kabel fiber optik adalah jenis kabel jaringan yang menggunakan serat kaca untuk mentransmisikan data dalam bentuk cahaya. 
+                        Kabel ini memiliki kecepatan transfer data yang sangat tinggi dan jarak jangkauan yang jauh.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-blue-500 mr-2 mt-1"></i>
+                            <span>Kecepatan transfer hingga 100 Gbps</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-blue-500 mr-2 mt-1"></i>
+                            <span>Jangkauan hingga 80 km tanpa repeater</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-blue-500 mr-2 mt-1"></i>
+                            <span>Tahan terhadap interferensi elektromagnetik</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-64 bg-blue-100 flex items-center justify-center">
+                        <i data-feather="wifi" class="text-blue-500 w-24 h-24"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Perangkat Jaringan Section -->
+        <section>
+            <h2 class="text-3xl font-bold text-blue-600 mb-8 text-center">Perangkat Jaringan LAN</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Modem -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="hard-drive" class="text-blue-500 mr-3"></i>
+                        <h3 class="text-xl font-bold text-gray-800">Modem</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Modem (Modulator-Demodulator) adalah perangkat yang mengubah sinyal digital menjadi analog dan sebaliknya, 
+                        memungkinkan koneksi internet melalui saluran telepon atau kabel.
+                    </p>
+                    <div class="bg-blue-50 rounded-lg p-4">
+                        <h4 class="font-semibold text-blue-600 mb-2">Fungsi Utama:</h4>
+                        <ul class="text-gray-600 text-sm space-y-1">
+                            <li>• Mengubah sinyal digital ke analog</li>
+                            <li>• Menghubungkan ke ISP</li>
+                            <li>• Menyediakan koneksi internet dasar</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Router -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="share-2" class="text-blue-500 mr-3"></i>
+                        <h3 class="text-xl font-bold text-gray-800">Router</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Router adalah perangkat jaringan yang mengarahkan paket data antara jaringan komputer. 
+                        Router menghubungkan beberapa jaringan dan menentukan jalur terbaik untuk transmisi data.
+                    </p>
+                    <div class="bg-blue-50 rounded-lg p-4">
+                        <h4 class="font-semibold text-blue-600 mb-2">Fungsi Utama:</h4>
+                        <ul class="text-gray-600 text-sm space-y-1">
+                            <li>• Menghubungkan beberapa jaringan</li>
+                            <li>• Mengarahkan lalu lintas jaringan</li>
+                            <li>• Menyediakan fitur keamanan</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Switch -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="grid" class="text-blue-500 mr-3"></i>
+                        <h3 class="text-xl font-bold text-gray-800">Switch</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Switch adalah perangkat jaringan yang menghubungkan beberapa perangkat dalam jaringan lokal (LAN) dan menggunakan alamat MAC 
+                        untuk mengarahkan data ke tujuan yang tepat.
+                    </p>
+                    <div class="bg-blue-50 rounded-lg p-4">
+                        <h4 class="font-semibold text-blue-600 mb-2">Fungsi Utama:</h4>
+                        <ul class="text-gray-600 text-sm space-y-1">
+                            <li>• Menghubungkan perangkat dalam LAN</li>
+                            <li>• Meningkatkan efisiensi jaringan</li>
+                            <li>• Mengurangi tabrakan data</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Access Point -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="radio" class="text-blue-500 mr-3"></i>
+                        <h3 class="text-xl font-bold text-gray-800">Access Point</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Access Point adalah perangkat yang memungkinkan perangkat nirkabel untuk terhubung ke jaringan kabel menggunakan Wi-Fi atau standar nirkabel terkait.
+                    </p>
+                    <div class="bg-blue-50 rounded-lg p-4">
+                        <h4 class="font-semibold text-blue-600 mb-2">Fungsi Utama:</h4>
+                        <ul class="text-gray-600 text-sm space-y-1">
+                            <li>• Menyediakan koneksi nirkabel</li>
+                            <li>• Memperluas jangkauan jaringan</li>
+                            <li>• Mendukung banyak perangkat</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Kabel UTP -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="link" class="text-blue-500 mr-3"></i>
+                        <h3 class="text-xl font-bold text-gray-800">Kabel UTP</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Kabel UTP (Unshielded Twisted Pair) adalah kabel jaringan yang terdiri dari empat pasang kabel tembaga yang dipilin bersama tanpa pelindung.
+                        Biasa digunakan untuk jaringan Ethernet.
+                    </p>
+                    <div class="bg-blue-50 rounded-lg p-4">
+                        <h4 class="font-semibold text-blue-600 mb-2">Fungsi Utama:</h4>
+                        <ul class="text-gray-600 text-sm space-y-1">
+                            <li>• Menghubungkan perangkat dalam LAN</li>
+                            <li>• Murah dan mudah dipasang</li>
+                            <li>• Mendukung kecepatan hingga 1 Gbps</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Kabel STP -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="link-2" class="text-blue-500 mr-3"></i>
+                        <h3 class="text-xl font-bold text-gray-800">Kabel STP</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Kabel STP (Shielded Twisted Pair) mirip dengan UTP tetapi memiliki pelindung tambahan untuk mengurangi interferensi elektromagnetik.
+                        Cocok untuk lingkungan dengan banyak gangguan elektromagnetik.
+                    </p>
+                    <div class="bg-blue-50 rounded-lg p-4">
+                        <h4 class="font-semibold text-blue-600 mb-2">Fungsi Utama:</h4>
+                        <ul class="text-gray-600 text-sm space-y-1">
+                            <li>• Perlindungan terhadap interferensi</li>
+                            <li>• Performa lebih baik di lingkungan bising</li>
+                            <li>• Mendukung jarak lebih panjang</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <i data-feather="globe" class="text-white mr-2"></i>
+                        <span class="font-bold text-xl">SINETPRO</span>
+                    </div>
+                    <p class="mt-2">Sistem Informasi Kelompok 9 - PWD</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://www.instagram.com/hylkul_fanny?igsh=MTFhNWM3NGt6bGI4Mw==" class="hover:text-blue-200 transition duration-300">
+                        <i data-feather="instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-blue-500 mt-6 pt-6 text-center">
+                <p>&copy; 2025 SINETPRO - Kelompok 9. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
